@@ -6,8 +6,12 @@
         </div>
 
         <h1>
-            <span class="site-title">[{{site.username}}]</span>
+            <span class="site-title">「{{site.username}}」</span>
         </h1>
+        <!--
+        <h3>
+            <span>{{site.title}}</span>
+        </h3>-->
 
         <div class="icons-home">
             <a aria-label="Send email" title="Send me a e-mail" href="mailto:{{site.email}}">
@@ -18,21 +22,22 @@
                 <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
             </a>
 
-            <a aria-label="My Google Plus" title="Show my feed" target="_blank" href="https://plus.google.com/u/0/+{{site.gplus_username}}/posts">
-                <svg class="icon icon-google-plus"><use xlink:href="#icon-google-plus"></use></svg>
-            </a>
-
             <a aria-label="My Github" title="Show my projects" target="_blank" href="https://github.com/{{site.github_username}}">
                 <svg class="icon icon-github-alt"><use xlink:href="#icon-github-alt"></use></svg>
+            </a>
+            
+            <a aria-label="My Medium" title="Show my medium profile" target="_blank" href="https://www.medium.com/@{{site.medium_username}}">
+                <svg class="icon icon-medium"><use xlink:href="#icon-medium"></use></svg>
             </a>
 
             <a aria-label="My LinkedIn" title="Show my linkedin profile" target="_blank" href="https://www.linkedin.com/in/{{site.linkedin_public_url}}">
                 <svg class="icon icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg>
             </a>
 
+            <!-- Will implement Blog post RSS feed in the future
             <a aria-label="Use the RSS to get updated" title="Register for my RSS" target="_blank" href="{{ "/feed.xml" | prepend: site.baseurl }}">
                 <svg class="icon icon-rss"><use xlink:href="#icon-rss"></use></svg>
-            </a>
+            </a>-->
         </div>
 
         <ul class="recent">
