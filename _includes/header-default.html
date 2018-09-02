@@ -26,7 +26,7 @@
                 <svg class="icon icon-github-alt"><use xlink:href="#icon-github-alt"></use></svg>
             </a>
             
-            <a aria-label="My Medium" title="Show my medium profile" target="_blank" href="https://www.medium.com/@{{site.medium_username}}">
+            <a aria-label="My Medium" title="Show my Medium blog" target="_blank" href="https://www.medium.com/@{{site.medium_username}}">
                 <svg class="icon icon-medium"><use xlink:href="#icon-medium"></use></svg>
             </a>
 
@@ -41,17 +41,6 @@
         </div>
 
         <ul class="recent">
-            <p>Recent posts:</p>
-             {% for post in site.posts limit:3%}
-                <li>
-                    <a title="Will take a my recent post" href="{{ post.url | prepend: site.baseurl }}">
-                        <h2 class="post-title" itemprop="name">{{ post.title }}</h2>
-                    </a>
-                </li>
-              {% endfor %}
-        </ul>
-
-        <ul class="recent">
             <p>Recent projects:</p>
              {% for project in site.projects limit:3%}
                 <li>
@@ -61,6 +50,19 @@
                 </li>
               {% endfor %}
         </ul>
+
+        <!-- Blog migration coming soon
+        <ul class="recent">
+            <p>Recent posts:</p>
+             {% for post in site.posts limit:3%}
+                <li>
+                    <a title="Will take my recent post" href="{{ post.url | prepend: site.baseurl }}">
+                        <h2 class="post-title" itemprop="name">{{ post.title }}</h2>
+                    </a>
+                </li>
+              {% endfor %}
+        </ul>
+        -->
 
     </div>
     {% include menu-search.html %}

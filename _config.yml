@@ -12,11 +12,9 @@ user_title: Developer Evangelist, @Datmo
 email: nicholaswalsh.official@gmail.com
 twitter_username: thenickwalsh
 github_username:  nmwalsh
-#gplus_username:  loremipsum
-linkedin_public_url: thenickwalsh
-#disqus_username: loremipsum
-#profile_picture: https://68.media.tumblr.com/93f384858e9273d5b980b418e2f2f4d5/tumblr_o5i2aybLJG1uapsfmo2_250.png
+medium_username: nicholasmwalsh
 profile_picture: /assets/img/tomcruise.png
+linkedin_public_url: thenickwalsh
 
 # Build settings
 markdown: kramdown
@@ -62,12 +60,12 @@ links:
 
 # projects in header index
 projects:
-  - name: fluany
-    url: https://github.com/fluany/fluany
-  - name: vim-frontend
-    url: https://github.com/victorvoid/vim-frontend
-  - name: generator-capybara
-    url: https://github.com/victorvoid/generator-capybara 
+  - name: 🦅 datmo_falcon_api
+    url: https://github.com/nmwalsh/datmo_falcon_api
+  - name: 🌃 style-twitter-bot
+    url: https://github.com/nmwalsh/style-twitter-bot
+  - name: 💸 authorizenet-python-demo
+    url: https://github.com/nmwalsh/authorizenet-python-demo
 
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
