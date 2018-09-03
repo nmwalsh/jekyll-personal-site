@@ -18,7 +18,11 @@ a
 @font-face {
     font-family: 'pokemon-font';
     font-style: normal;
-    src: local('pokemon-font'), '/src/fonts/pokemon-font/pokemon-font.ttf'; 
+    //src: local('pokemon-font'), url('/src/fonts/pokemon-font/pokemon-font.ttf'); 
+    src: local('pokemon-font'), 
+         url('/assets/fonts/pokemon-font/pokemon-font.woff2') format('woff2'),
+         url('/assets/fonts/pokemon-font/pokemon-font.woff') format('woff'),
+         url('/assets/fonts/pokemon-font/pokemon-font.ttf') format('truetype');
     }
 
 mainFont(weight = 800)
