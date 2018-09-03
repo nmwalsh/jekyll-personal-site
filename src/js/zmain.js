@@ -28,14 +28,19 @@
     $("#search").trigger('click');
   })
 
+
+
   //Keys
   $(document).keydown(function(e){
     if(!$('.search-form').hasClass('active')){
       switch(e.key) {
-        case " ":
+        case "a": // Key to open menu on keypress
           $('a#slide').trigger('click');
           break;
-        case "Escape":
+        case "Escape": // Key to exit menu on keypress
+          $('#fade').trigger('click');
+          break;
+        case "q": // Alternative Key to exit menu on keypress
           $('#fade').trigger('click');
           break;
       }

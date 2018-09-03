@@ -77,7 +77,10 @@ links:
   section_3:
     - title: search
       url: ""
-      key_trigger: s #WARNING: search only works with "s"
+      key_trigger: s #WARNING: search only works with "s", as defined in zmain.js
+    - title: quit
+      url: ""
+      key_trigger: q #WARNING: search only works with "s"
     
 
 # projects in header index
