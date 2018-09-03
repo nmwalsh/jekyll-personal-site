@@ -1,6 +1,6 @@
 # jekyll-personal-site
 
-Repo for my personal website. Custom fork of the [space-jekyll-template](https://github.com/victorvoid/space-jekyll-template) theme.
+Repo for my personal website, built with [Jekyll](https://jekyllrb.com/). Custom fork of the [space-jekyll-template](https://github.com/victorvoid/space-jekyll-template) theme.
 
 
 ## Site/User Settings
