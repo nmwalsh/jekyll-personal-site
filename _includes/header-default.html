@@ -6,12 +6,8 @@
         </div>
 
         <h1>
-            <span class="site-title">「{{site.username}}」</span>
+            <span class="site-title">「 {{site.username}} 」</span>
         </h1>
-        <!--
-        <h3>
-            <span>{{site.title}}</span>
-        </h3>-->
 
         <div class="icons-home">
             <a aria-label="Send email" title="Send me a e-mail" href="mailto:{{site.email}}">
@@ -42,15 +38,18 @@
 
         <ul class="recent">
             <p>Recent projects:</p>
-             {% for project in site.projects limit:3%}
+             {% for project in site.projects limit:4%}
                 <li>
-                    <a title="Show my recent project" href="{{ project.url}}">
+                    <a title="Show my recent project" href="{{ project.url}}" target="_blank">
                         <h2 class="post-title" itemprop="name">{{ project.name }}</h2>
                     </a>
                 </li>
               {% endfor %}
         </ul>
-
+        <br><br>
+        <h3 style="font-family: pokemon-font; color: white;">
+            [ Press A for nav menu! ]
+        </h3>
         <!-- Blog migration coming soon
         <ul class="recent">
             <p>Recent posts:</p>

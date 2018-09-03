@@ -7,7 +7,7 @@ baseurl: ''
 url: ''
 
 # User settings
-username: nick walsh
+username: Nick Walsh
 user_title: Developer Evangelist, @Datmo
 email: nicholaswalsh.official@gmail.com
 twitter_username: thenickwalsh
@@ -34,38 +34,74 @@ links:
     - title: home
       url: /
       key_trigger: 1
-    - title: my posts
-      url: /posts
-      key_trigger: 2
-    - title: series
-      url: /series
-      key_trigger: 3
-    - title: tags
-      url: /tags
-      key_trigger: 4
     - title: about me
       url: /about
+      key_trigger: 2
+    - title: blog (coming soon)
+      url: ""
+      key_trigger: 3
+    - title: talks (coming soon)
+      url: ""
+      key_trigger: 4
+    - title: events (coming soon)
+      url: ""
       key_trigger: 5
+    #- title: resume
+    #  url: /resume
+    #  key_trigger: r
+    #- title: series
+    #  url: /series
+    #  key_trigger: 3
+    #- title: tags
+    #  url: /tags
+    #  key_trigger: 4
+
   section_2:
     - title: github
-      url: http://www.github.com/victorvoid
+      url: https://www.github.com/nmwalsh
       new_tab: true
       key_trigger: g
     - title: twitter
-      url: http://www.twitter.com/victorvoid
+      url: https://www.twitter.com/thenickwalsh
       key_trigger: t
+    - title: medium
+      url: https://www.medium.com/@nicholasmwalsh
+      key_trigger: m
+    - title: linkedin
+      url: https://www.linkedin.com/thenickwalsh
+      key_trigger: l
+    - title: slides
+      url: https://www.slides.com/walsh
+      key_trigger: w
+
+  section_3:
     - title: search
       url: ""
       key_trigger: s #WARNING: search only works with "s"
+    
 
 # projects in header index
 projects:
-  - name: 🦅 datmo_falcon_api
-    url: https://github.com/nmwalsh/datmo_falcon_api
   - name: 🌃 style-twitter-bot
     url: https://github.com/nmwalsh/style-twitter-bot
-  - name: 💸 authorizenet-python-demo
+  - name: 🦅 datmo_falcon_api
+    url: https://github.com/nmwalsh/datmo_falcon_api
+  - name: 💸 authorizenet-payments-boilerplate
     url: https://github.com/nmwalsh/authorizenet-python-demo
+  - name: ⭐ Datmo website redesign
+    url: https://datmo.com/
+
+talks:
+  - name: 🤖 Building Apps with Machine Learning
+    url: http://slides.com/walsh/appswithai
+  - name: 📓 Version Control for Machine Learning and AI
+    url: https://slides.com/walsh/ai-version-control
+  - name: 📦 The Need for Standardized MLOps
+    url: https://slides.com/walsh/standards-in-ml-ops
+  - name: 📺 The Story of Twitch
+    url: https://slides.com/walsh/story-of-twitch
+  - name: 📊 Intro to TensorFlow + Machine Learning Version Control
+    url: https://slides.com/walsh/intro-to-tf-and-ml-version-control
 
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']

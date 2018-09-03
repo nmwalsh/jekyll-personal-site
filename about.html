@@ -1,18 +1,134 @@
 ---
-layout: minimal
+layout: minimal-no-sidebar
 title: "About me"
 permalink: /about/index.html
-description: "Some description about Victor Igor..."
+description: "Learn more about my hobbies, interests, and background"
 ---
+<style>
+.d2mh {
+    background-image: url("https://raw.githubusercontent.com/bontscho/dota2-minimap-hero-sprites/master/assets/images/minimap_hero_sheet.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+.d2mh.legion_commander, .d2mh.npc_dota_hero_legion_commander, .d2mh.hero-104 { 
+    background-position: -320px -192px;
+}
+.d2mh.juggernaut, .d2mh.npc_dota_hero_juggernaut, .d2mh.hero-8 { 
+    background-position: -224px -32px;
+}
+.d2mh.luna, .d2mh.npc_dota_hero_luna, .d2mh.hero-48 { 
+    background-position: -32px -160px;
+}
+.d2mh.enigma, .d2mh.npc_dota_hero_enigma, .d2mh.hero-33 { 
+    background-position: -96px -32px;
+}
+</style>
+<img itemprop="image" class="img-rounded about_perfil" src="{{site.profile_picture}}" alt="My profile">
 
-<img itemprop="image" class="img-rounded about_perfil" src=" https://68.media.tumblr.com/93f384858e9273d5b980b418e2f2f4d5/tumblr_o5i2aybLJG1uapsfmo2_250.png" alt="My profile">
+<h2>About Me</h2>
+<div id="blurb">
+	<p>Hey, I'm <b>Nick</b> -- a technologist, hacker, and engineer working to improve experiences for developers, building some cool things along the way.</p>
+	<p>Currently, I work as a <i>Developer Evangelist</i> at <a href="https://www.datmo.com">Datmo</a>, where we build developer tools for streamlining the process of training and deploying AI + machine learning models.</p>
 
-<h2>My projects</h2>
+	<p>On weekends, I put on my <a href="https://mlh.io">Major League Hacking</a> hat and travel to hackathons across North America to mentor and empower student developers.
+	I've highlighted some of my favorite parts of these events <a href="https://stories.mlh.io/looking-back-at-a-year-of-life-changing-hackathons-fc64eec916d7">here</a> and <a href="https://medium.com/@nicholasmwalsh/highlights-from-another-year-of-hackathons-fb2a7ac7e170">here</a>.
+	</p>
+
+</div>
 
 <div class="aboutme">
-	<ul class="recent">
-		{% for project in site.projects %}
-	    	<li><a href="{{ project.url}}"><h3 class="project-name" itemprop="name">{{ project.name }}</h3></a></li>
-	    {% endfor %}
-	</ul>
+		<h3>Some of my recent talks are:</h3>
+		<ul class="recent">
+			{% for talk in site.talks %}
+				<li><a href="{{ talk.url}}" target="_blank"><h3 class="project-name" itemprop="name">{{ talk.name }}</h3></a></li>
+			{% endfor %}
+		</ul>
 </div>
+<div class="aboutme">
+		<h3>Some of my recent notable projects are:</h3>
+		<ul class="recent">
+			{% for project in site.projects %}
+				<li><a href="{{ project.url}}" target="_blank"><h3 class="project-name" itemprop="name">{{ project.name }}</h3></a></li>
+			{% endfor %}
+		</ul>
+</div>
+
+<div id="hobbies">
+	<h3>Hobbies</h3>
+		<div id="gaming">
+			<ul>
+			<h5>🖥 Gaming/Esports</h5>
+				<p> It'd be a shame for me to not mention video games, as I've played thousands of hours over the years.
+					Video games have brought me some of my closest friends and have helped me grow immensely (running a WoW guild is more like running a company than one would imagine).
+					<br><br>
+					Lately, I've been playing a lot of:
+				</p>
+				
+			<li>Dota2
+				(
+					<i class="d2mh legion_commander"></i>
+					<i class="d2mh juggernaut"></i>
+					<i class="d2mh luna"></i>
+					<i class="d2mh enigma"></i>	
+					<i>#NAdota</i>
+				)
+					<!-- Heroes
+					<li> 
+						<i class="d2mh legion_commander"></i>
+						<i class="d2mh juggernaut"></i>
+						<i class="d2mh luna"></i>
+						<i class="d2mh enigma"></i>
+					</li>
+					
+					Teams 
+					<li>Teams:
+						<i class="d2mh legion_commander"></i>
+						<i class="d2mh juggernaut"></i>
+						<i class="d2mh luna"></i>
+						<i class="d2mh enigma"></i>
+					</li>-->
+			</li>
+			<li>Counter Strike: Global Offensive</li>
+			<li>Fallout</li>
+			<li>League of Legends</li>
+			<li>World of Warcraft (not so much anymore, but will always have a place in my heart)</li>
+			</ul>
+		</div>
+		<div id="sports">
+			<ul>
+				<h5>💪 Sports/Fitness</h5>
+				<p>Having been an athlete my whole life, fitness and team sports are some of my favorite
+					outlets for self-improvement and stress relief.
+					Moving to the Bay Area has been great for this, affording me a lot of access to:
+				</p>
+				<li>🏐 Volleyball (weekly open gyms/tournies + sand courts at Stanford)</li>
+				<li>⛰ Hiking (More local trails than anyone could count!) </li>
+				<li>🏋 Weightlifting (Not unique, but something I've been taking more seriously lately)</li>
+			</ul>
+		</div>
+		<div id="writing">
+				<ul>
+					<h5>✍ Content Creation</h5>
+					<p>Despite my job involving a solid amount of <a href="https://blog.datmo.com/" target="_blank">writing</a> and teaching for work, I've always been scared of losing my
+						informal communication abilities that I'd picked up through debate, research, and other avenues over the years.
+						Blogging has helped me keep these skills sharp, and posting publically has helped me hold myself accountable. 
+					</p>
+					<li>🚫 <a href="https://medium.com/@nicholasmwalsh/twitter-cyber-harassment-deconstructed-aabd1eb9c5ce">Twitter Cyber Harassment, Deconstructed </a></li>
+					<li>📣 <a href="https://medium.com/devrel-summit/event-technical-evangelism-is-a-game-of-inches-314de083bb8">Event Technical Evangelism is a Game of Inches</a></li>
+					<li>🎮 <a href="https://medium.com/@nicholasmwalsh/the-issue-of-current-front-facing-quantitative-performance-metrics-in-blizzards-overwatch-and-bf040576f393">The case for meaningful performance metrics in Blizzard's Overwatch</a></li>
+					<li>💻 <a href="https://medium.com/@nicholasmwalsh/zero-to-hero-in-36-hours-a-hackathon-project-guide-e7aeb5989c74">Zero to Hero: a hackathon project starter guide</a></li>
+					<br>
+					<p>
+						For this coming year, I'm looking forward to delivering on my promise to myself
+						to create more projects related to data, gaming, and esports, particularly with new mediums
+						that excite me like Twitch streaming and Youtube videos.
+					</p>
+				</ul>
+			</div>
+
+		
+
+</div>
+
