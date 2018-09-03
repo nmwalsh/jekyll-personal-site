@@ -93,8 +93,16 @@ gulp.task('watch', function () {
 	gulp.watch(['*.html', '_includes/*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
 
+/* Build custom fonts (pokemon) */
+gulp.task('fonts', function () {
+	return gulp.src('src/fonts/**/*.{eot,svg,ttf,woff,woff2}')
+	  .pipe(plumber())
+	  $.pipe(flatten())
+	  .pipe(gulp.dest('assets/fonts/'));
+  });
+
 /**
  * Default task, running just `gulp` will compile the stylus,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
-gulp.task('default', ['js', 'stylus', 'browser-sync', 'watch']);
+gulp.task('default', ['js', 'stylus', 'browser-sync', 'watch', 'fonts']);
