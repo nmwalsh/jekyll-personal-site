@@ -1,12 +1,9 @@
-# Space Jekyll
+# jekyll-personal-site
 
-A simple and elegant Jekyll theme based on Spacemacs. The theme works well on mobile devices as well.
+Repo for my personal website. Custom fork of the [space-jekyll-template](https://github.com/victorvoid/space-jekyll-template) theme.
 
-See a live demo [here](https://victorvoid.github.io/space-jekyll-template/).
 
-![](https://github.com/victorvoid/space-jekyll-template/blob/master/screenshot.png?raw=true)
-
-# Site/User Settings
+## Site/User Settings
 
 customize your site in ``_config.yml``
 
