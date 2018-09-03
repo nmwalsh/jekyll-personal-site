@@ -38,7 +38,7 @@
 
         <ul class="recent">
             <p>Recent projects:</p>
-             {% for project in site.projects limit:4%}
+             {% for project in site.projects limit:3%}
                 <li>
                     <a title="Show my recent project" href="{{ project.url}}" target="_blank">
                         <h2 class="post-title" itemprop="name">{{ project.name }}</h2>
@@ -51,6 +51,7 @@
         <h3 class="site-tagline">
             <p>[ Press A for nav menu! ]<p></p>
         </h3>
+               
         <!-- Blog migration coming soon
         <ul class="recent">
             <p>Recent posts:</p>
@@ -63,7 +64,8 @@
               {% endfor %}
         </ul>
         -->
-
+        
+        {% include ash-pikachu.html %}
     </div>
     {% include menu-search.html %}
 </header>

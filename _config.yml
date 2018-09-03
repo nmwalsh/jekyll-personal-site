@@ -37,15 +37,15 @@ links:
     - title: about me
       url: /about
       key_trigger: 2
-    - title: blog (coming soon)
-      url: ""
-      key_trigger: 3
-    - title: talks (coming soon)
-      url: ""
-      key_trigger: 4
-    - title: events (coming soon)
-      url: ""
-      key_trigger: 5
+    #- title: blog (coming soon)
+    #  url: ""
+    #  key_trigger: 3
+    #- title: talks (coming soon)
+    #  url: ""
+    #  key_trigger: 4
+    #- title: events (coming soon)
+    #  url: ""
+    #  key_trigger: 5
     #- title: resume
     #  url: /resume
     #  key_trigger: r
@@ -87,12 +87,13 @@ links:
 projects:
   - name: 🌃 style-twitter-bot
     url: https://github.com/nmwalsh/style-twitter-bot
+  - name: ⭐ Datmo website redesign
+    url: https://datmo.com/
   - name: 🦅 datmo_falcon_api
     url: https://github.com/nmwalsh/datmo_falcon_api
   - name: 💸 authorizenet-payments-boilerplate
     url: https://github.com/nmwalsh/authorizenet-python-demo
-  - name: ⭐ Datmo website redesign
-    url: https://datmo.com/
+  
 
 talks:
   - name: 🤖 Building Apps with Machine Learning

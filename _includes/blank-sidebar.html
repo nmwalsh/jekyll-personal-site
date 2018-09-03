@@ -1,9 +1,8 @@
 <div class="tree-posts">
-
-    <h3>[ Press A for Menu ]</h3>
+    <h4 style="font-family:'pokemon-font'; color: white;">[ Press A for Menu ]</h4>
 
     {% for post in site.posts %}
-
+    
     <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
         <div class="content">
 
@@ -11,5 +10,7 @@
     </article>
 
     {% endfor %}
-
+    <div style="position:fixed; bottom:5px;">
+        {% include ash-pikachu.html %}
+    </div>
 </div>
