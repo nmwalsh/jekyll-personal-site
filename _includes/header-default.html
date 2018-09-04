@@ -9,16 +9,20 @@
             <span class="site-title">「 {{site.username}} 」</span>
         </h1>
 
-        <div class="icons-home">
+        <div class="icons-home" style="max-width:98%">
             <a aria-label="Send email" title="Send me a e-mail" href="mailto:{{site.email}}">
                 <svg class="icon icon-email"><use xlink:href="#icon-email"></use></svg>
+            </a>
+            
+            <a aria-label="About me" title="Find out about me" href="/about">
+                    <svg class="icon icon-person"><use xlink:href="#icon-person"></use></svg>
             </a>
 
             <a aria-label="My Twitter" title="Follow me on Twitter" target="_blank" href="https://twitter.com/{{site.twitter_username}}">
                 <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
             </a>
 
-            <a aria-label="My Github" title="Show my projects" target="_blank" href="https://github.com/{{site.github_username}}">
+            <a aria-label="My Github" title="Show my GitHub profile" target="_blank" href="https://github.com/{{site.github_username}}">
                 <svg class="icon icon-github-alt"><use xlink:href="#icon-github-alt"></use></svg>
             </a>
             
@@ -26,7 +30,7 @@
                 <svg class="icon icon-medium"><use xlink:href="#icon-medium"></use></svg>
             </a>
 
-            <a aria-label="My LinkedIn" title="Show my linkedin profile" target="_blank" href="https://www.linkedin.com/in/{{site.linkedin_public_url}}">
+            <a aria-label="My LinkedIn" title="Show my LinkedIn profile" target="_blank" href="https://www.linkedin.com/in/{{site.linkedin_public_url}}">
                 <svg class="icon icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg>
             </a>
 

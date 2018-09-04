@@ -37,6 +37,7 @@ links:
     - title: about me
       url: /about
       key_trigger: 2
+    
     #- title: blog (coming soon)
     #  url: ""
     #  key_trigger: 3
@@ -73,6 +74,7 @@ links:
     - title: slides
       url: https://www.slides.com/walsh
       key_trigger: w
+    
 
   section_3:
     - title: search
@@ -80,8 +82,9 @@ links:
       key_trigger: s #WARNING: search only works with "s", as defined in zmain.js
     - title: quit
       url: ""
-      key_trigger: q #WARNING: search only works with "s"
+      key_trigger: q 
     
+
 
 # projects in header index
 projects:
