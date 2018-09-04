@@ -2,7 +2,13 @@
 
 Repo for my personal website, built with [Jekyll](https://jekyllrb.com/). Custom fork of the [space-jekyll-template](https://github.com/victorvoid/space-jekyll-template) theme.
 
+## Updating
 
+For updating:
+```
+# while in project root
+$ aws s3 cp _site/ s3://www.nwalsh.io --recursive
+```
 ## Site/User Settings
 
 customize your site in ``_config.yml``

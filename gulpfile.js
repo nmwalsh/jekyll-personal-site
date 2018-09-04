@@ -9,7 +9,8 @@ var gulp        = require('gulp'),
 	koutoSwiss  = require('kouto-swiss'),
 	prefixer    = require('autoprefixer-stylus'),
 	imagemin    = require('gulp-imagemin'),
-	cp          = require('child_process');
+	cp          = require('child_process'),
+	deploy      = require('gulp-gh-pages');
 
 var messages = {
 	jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -93,13 +94,24 @@ gulp.task('watch', function () {
 	gulp.watch(['*.html', '_includes/*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
 
-/* Build custom fonts (pokemon) */
+/**
+ *Build custom fonts (pokemon) 
+ */
 gulp.task('fonts', function () {
 	return gulp.src('src/fonts/**/*.{eot,svg,ttf,woff,woff2}')
 	  .pipe(plumber())
 	  $.pipe(flatten())
 	  .pipe(gulp.dest('assets/fonts/'));
   });
+
+  /**
+ * Push build to gh-pages
+ */
+
+ //gulp.task('deploy', function () {
+	//return gulp.src("./dist/**/*")
+	  //.pipe(deploy())
+  //});
 
 /**
  * Default task, running just `gulp` will compile the stylus,
